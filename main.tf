@@ -61,7 +61,7 @@ resource "aws_s3_bucket_versioning" "default" {
   bucket = join("", aws_s3_bucket.default.*.id)
 
   versioning_configuration {
-    status = "Enabled"
+    status = "Disabled"
   }
 }
 
